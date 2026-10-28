@@ -1,0 +1,26 @@
+Dependencias de Node.js
+
+node_modules/
+
+Next.js
+
+.next/
+out/
+
+Archivos de entorno
+
+.env
+.env.local
+.env.development.local
+.env.test.local
+.env.production.local
+
+Archivos de compilación
+
+dist/
+build/
+
+Archivos del sistema
+
+.DS_Store
+Thumbs.db

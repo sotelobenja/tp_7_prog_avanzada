@@ -1,0 +1,36 @@
+{
+  "name": "rutasur-simulador",
+  "version": "1.0.0",
+  "private": true,
+  "scripts": {
+    "simulator": "node simulador.js",
+    "proyector": "node services/proyector.js",
+    "notificaciones": "node services/notificaciones.js",
+    "reprogramacion": "node services/reprogramacion.js",
+    "monitor": "node services/monitor-sla.js",
+    "analitica": "node services/analitica.js",
+    "dlq": "node services/dlq.js",
+    "scenario": "node services/scenario-demo.js",
+    "web": "next dev -p 3000",
+    "web:build": "next build",
+    "web:start": "next start -p 3000",
+    "docker:up": "docker compose up -d --build",
+    "docker:down": "docker compose down -v",
+    "infra": "docker compose up -d",
+    "infra:down": "docker compose down -v",
+    "start:all": "node scripts/start-all.js",
+    "stop:all": "node scripts/stop-all.js",
+    "demo:feliz": "node services/scenario-demo.js feliz",
+    "demo:ausente": "node services/scenario-demo.js ausente",
+    "demo:demorado": "node services/scenario-demo.js demorado",
+    "demo:tercer-fallo": "node services/scenario-demo.js tercer-fallo"
+  },
+  "dependencies": {
+    "dotenv": "^16.4.1",
+    "kafkajs": "^2.2.4",
+    "mongodb": "^6.0.0",
+    "next": "14.2.15",
+    "react": "18.3.1",
+    "react-dom": "18.3.1"
+  }
+}
